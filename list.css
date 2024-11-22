@@ -1,0 +1,17 @@
+/* Navbar remains unaffected */
+.gallery-container {
+    margin-top: 200px; /* Moves only the gallery */
+  }
+  
+  .navbar {
+    position: relative; /* Ensures the navbar doesn't get affected */
+    z-index: 100; /* Keeps the navbar on top of other elements */
+  }
+  
+  .gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
