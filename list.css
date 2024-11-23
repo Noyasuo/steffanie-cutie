@@ -1,20 +1,19 @@
 /* Body and background */
 body {
   background-color: #141414;
-  margin-top: 80px; /* Adjust for navbar height */
+  margin-top: 100px; /* Add space at the top to prevent content from being covered by the fixed navbar */
 }
 
 /* Navbar styles */
 .navbar {
   margin: 0;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
-  backdrop-filter: blur(5px); /* Add a slight blur effect for readability */
+  background-color: #141414;
   position: fixed; /* Make the navbar fixed */
-  top: 0; /* Stick to the top */
+  top: 0; /* Position it at the top */
   left: 0; /* Align it to the left */
   right: 0; /* Align it to the right */
-  z-index: 1000; /* Ensure it stays on top of content */
+  z-index: 1000; /* Ensure it's on top of other content */
   width: 100%;
 }
 
@@ -37,7 +36,7 @@ body {
 }
 
 .netflix-dropdown-box .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  background-color: transparent; /* Transparent background */
   border: none;
 }
 
