@@ -1,17 +1,99 @@
-/* Navbar remains unaffected */
-.gallery-container {
-    margin-top: 200px; /* Moves only the gallery */
-  }
-  
-  .navbar {
-    position: relative; /* Ensures the navbar doesn't get affected */
-    z-index: 100; /* Keeps the navbar on top of other elements */
-  }
-  
-  .gallery-container img {
+/* Body and background */
+body {
+  background-color: #141414;
+  margin-top: 100px; /* Add space at the top to prevent content from being covered by the fixed navbar */
+}
+
+/* Navbar styles */
+.navbar {
+  margin: 0;
+  padding: 1rem;
+  background-color: #141414;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's on top of other content */
+  width: 100%;
+}
+
+.navbar img {
+  height: 30px;
+  width: auto; /* Ensure the aspect ratio is maintained */
+}
+
+.netflix-nav button {
+  background: none;
+  border: none;
+  color: white;
+  margin: 0 5px;
+  font-size: 18px; /* Default font size for buttons */
+}
+
+.netflix-nav button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.netflix-dropdown-box .dropdown-menu {
+  background-color: transparent; /* Transparent background */
+  border: none;
+}
+
+.netflix-dropdown-box .dropdown-item {
+  background-color: rgba(0, 0, 0, 0.6); /* Add some black color with transparency */
+  color: #fff;
+  text-align: center;
+  font-size: 15px; /* Increase the size of the text */
+  padding: 10px 15px; /* Add padding for better spacing */
+  width: 250px;
+  margin-left: -80px; /* Move the background to the left */
+}
+
+.netflix-dropdown-box .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background on hover */
+  color: white; /* Maintain white text color */
+}
+
+/* Gallery styles */
+img {
+  object-fit: cover;
+  height: auto;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
   }
-  
+
+  /* Make the navbar logo smaller on mobile */
+  .navbar img {
+    height: 10px; /* Reduced size for smaller screens */
+  }
+
+  /* Transparent Browse button on mobile */
+  .netflix-dropdown-box button {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+}
+
+/* Make the Browse button visible only on mobile */
+.netflix-dropdown-box {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .netflix-dropdown-box {
+    display: block !important;
+  }
+}
+
+/* Reduce navbar button text size on desktop */
+@media (min-width: 992px) {
+  .netflix-nav button {
+    font-size: 12px; /* Further reduced font size for desktop */
+  }
+}
