@@ -30,7 +30,7 @@
                 </div>
                 <!-- Error message appears below the password field -->
                 <div id="errorMessage" class="text-danger small mt-1" style="display: none;">
-                    Invalid password. Please try again.
+                    Password will be available soon once you're ready
                 </div>
                 <button type="submit" class="btn btn-danger mt-3 w-100">Sign In</button>
                 <div class="mb-3 mt-3 form-check">
@@ -65,7 +65,7 @@
         const errorMessage = document.getElementById('errorMessage');
         const password = passwordInput.value.trim().toLowerCase();
 
-        if (password === 'venus') {
+        if (password === 'deafault') {
           // Redirect if password is correct
           window.location.href = './landing.html';
         } else {
