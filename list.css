@@ -102,6 +102,12 @@ body {
     height: 300px; /* Smaller height on mobile */
   }
 
+  /* Reduce vertical spacing between gallery items */
+  .row {
+    --bs-gutter-y: 10px; /* Reduced vertical spacing */
+    --bs-gutter-x: 10px; /* Optional: reduce horizontal spacing */
+  }
+
   /* Ensure the image scales properly in the container */
   .image-container img {
     width: 100%;
