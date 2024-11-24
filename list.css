@@ -59,7 +59,7 @@ body {
 .play-button {
   background-color: white;
   color: black;
-  border: none;
+  border: 3px solid black;
   border-radius: 5px; /* Small border radius for rectangle effect */
   padding: 5px 10px;
   font-size: 14px;
@@ -83,22 +83,26 @@ body {
 /* Image container styles */
 .image-container {
   position: relative;
-  width: 300px;  /* Default fixed width */
+  width: 300px; /* Default fixed width */
   height: 400px; /* Default fixed height */
-  overflow: hidden;  /* Ensure image stays inside container */
+  overflow: hidden; /* Ensure image stays inside container */
+  background-color: red; /* Inner black border color */
+  padding: 2px; /* Space for the black border */
+  box-sizing: border-box; /* Include padding and border in size calculations */
 }
 
 .image-container img {
-  object-fit: cover;  /* Ensure the image covers the entire container while maintaining aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
   width: 100%; /* Scale image to fill the container */
   height: 100%; /* Scale image to fill the container */
+  border: 3px solid black; /* Outer red border */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   /* Adjust image container size for mobile */
   .image-container {
-    width: 200px;  /* Smaller width on mobile */
+    width: 200px; /* Smaller width on mobile */
     height: 300px; /* Smaller height on mobile */
   }
 
