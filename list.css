@@ -109,19 +109,41 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   padding: 10px;
 }
 
 .image-container:hover .overlay {
-  opacity: 2;
+  opacity: 1;
 }
 
 .image-container .overlay-text {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 8px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.overlay-text-left {
+  top: 10px;
+  left: 10px;
+  transform: translateX(-100%);
+}
+
+.overlay-text-right {
+  bottom: 10px;
+  right: 10px;
+  transform: translateX(100%);
+}
+
+.image-container:hover .overlay-text-left {
+  transform: translateX(0);
+}
+
+.image-container:hover .overlay-text-right {
+  transform: translateX(0);
 }
 
 /* Responsive adjustments */
