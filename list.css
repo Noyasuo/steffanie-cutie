@@ -95,7 +95,7 @@ body {
   object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
   width: 100%; /* Scale image to fill the container */
   height: 100%; /* Scale image to fill the container */
-  border: 3px solid black; /* Outer black border */
+  border: 5px solid black; /* Outer black border */
 }
 
 /* Overlay styles */
@@ -162,7 +162,7 @@ body {
 
   /* Reduce red border for mobile view */
   .image-container img {
-    border: 1px solid black; /* Thinner red border */
+    border: 4px solid black; /* Thinner red border */
   }
 
   /* Make the navbar logo smaller on mobile */
