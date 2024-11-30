@@ -86,7 +86,7 @@ body {
   width: 300px; /* Default fixed width */
   height: 370px; /* Default fixed height */
   overflow: hidden; /* Ensure image stays inside container */
-  background-color: red; /* Inner black border color */
+  background-color: rgb(179, 7, 7); /* Inner black border color */
   padding: 2px; /* Space for the black border */
   box-sizing: border-box; /* Include padding and border in size calculations */
 }
