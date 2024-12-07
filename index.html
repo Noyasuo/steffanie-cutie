@@ -19,7 +19,7 @@
     <div class="d-flex justify-content-center align-items-center" style="width: 100vw;">
         <section class="login-box">
             <h2 class="text-white">Sign In</h2>
-            <form class="mt-4" onsubmit="return validatePassword(event)">
+            <form class="mt-4" onsubmit="navigateToLanding(event)">
                 <div class="mb-3 bg-white rounded px-2">
                   <label for="exampleInputEmail1" class="form-label small-text">Email or Phone Number</label>
                   <input type="email" class="form-control border-0 p-0" id="exampleInputEmail1" value="neptune@gmail.com" readonly>
@@ -58,7 +58,14 @@
 
     <!-- Optional JavaScript -->
     <script>
-      // Function to validate password
+      // Function to navigate to landing page
+      function navigateToLanding(event) {
+        event.preventDefault(); // Prevent form submission
+        window.location.href = './landing.html';
+      }
+
+      // Function to validate password (commented out)
+      /*
       function validatePassword(event) {
         event.preventDefault(); // Prevent form submission
         const passwordInput = document.getElementById('exampleInputPassword1');
@@ -73,6 +80,7 @@
           errorMessage.style.display = 'block';
         }
       }
+      */
     </script>
 
     <!-- Bootstrap Icons -->
