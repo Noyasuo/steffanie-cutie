@@ -59,16 +59,18 @@ body {
 .play-button {
   background-color: white;
   color: black;
-  border: 3px solid black;
   border-radius: 5px; /* Small border radius for rectangle effect */
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
   gap: 5px; /* Space between icon and text */
   font-weight: bold;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 42%; /* Set width to 48% */
+  height: 40px; /* Set a fixed height */
 }
 
 .play-button i {
@@ -78,6 +80,33 @@ body {
 
 .play-button:hover {
   background-color: #e6e6e6;
+}
+
+/* My List Button */
+.my-list-button {
+  background-color: #686D76; /* Semi-black background */
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  gap: 5px; /* Space between icon and text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 42%; /* Set width to 48% */
+  height: 40px; /* Set a fixed height */
+}
+
+.my-list-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker semi-black on hover */
+}
+
+.my-list-button .plus-sign {
+  font-size: 25px; /* Increase the size of the "+" symbol */
+  margin-bottom: 5px;
 }
 
 /* Image container styles */
@@ -177,15 +206,27 @@ body {
     color: white;
   }
 
-  /* Make play button smaller on mobile */
+  /* Make play button larger on mobile */
   .play-button {
     padding: 3px 7px; /* Smaller padding */
     font-size: 12px; /* Reduce font size */
-    border: 2px solid black; /* Slightly thinner border */
+    width: 100%; /* Increase width for mobile */
+    height: 30px; /* Adjust height for mobile */
   }
 
   .play-button i {
     font-size: 14px; /* Adjust icon size */
+  }
+
+  .my-list-button {
+    padding: 3px 7px; /* Smaller padding */
+    font-size: 12px; /* Reduce font size */
+    width: 100%; /* Increase width for mobile */
+    height: 30px; /* Adjust height for mobile */
+  }
+
+  .my-list-button .plus-sign {
+    font-size: 20px; /* Increase the size of the "+" symbol */
   }
 }
 
